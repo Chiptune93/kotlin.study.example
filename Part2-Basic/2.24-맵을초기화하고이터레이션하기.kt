@@ -9,7 +9,8 @@ fun main() {
         val binary = Integer.toBinaryString(c.toInt()) // 아스키 -> 2진
         binaryReps[c] = binary // c를 키로 2진 표현을 맵에 저장
     }
-
+		
+		// 위의 방식말고 아래 방식으로 사용 가능 하다.
     for ((letter, binary) in binaryReps) { // 맵에 대한 이터레이션
         println("$letter = $binary")
     }
