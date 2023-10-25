@@ -1,7 +1,6 @@
 package `Part4-ClassObjectInterface`
 
-import java.awt.event.MouseAdapter
-import java.awt.event.MouseEvent
+// 코틀린 무명 클래스는 여러 인터페이스를 구현하거나 클래스를 확장하면서 인터페이스를 구현할 수 있다.
 
 //window.addMouseListener (
 //        object : MouseAdapter() { // MouseAdapter를 확장하는 무명 객체를 선언한다.

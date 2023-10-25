@@ -1,6 +1,6 @@
 package `Part4-ClassObjectInterface`
 
-class Button : Clickable, Focusable {
+class Button : Clickable1, Focusable {
     override fun click() {
         println("I was clicked")
     }
@@ -9,7 +9,7 @@ class Button : Clickable, Focusable {
     override fun showOff() {
         // 상위 타입의 이름을 <>로 넣어 super를 지정하면
         // 어떤 상위 타입의 멤버 메소드를 호출할 지 지정할 수 있다.
-        super<Clickable>.showOff()
+        super<Clickable1>.showOff()
         super<Focusable>.showOff()
     }
 }

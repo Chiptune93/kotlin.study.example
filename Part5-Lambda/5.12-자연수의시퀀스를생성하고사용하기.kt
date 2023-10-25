@@ -8,7 +8,7 @@ fun main() {
     // sum 하기 전까지 위에 2개는 계산하지 않음.
     println(numbersTo100.sum())
 
-    val file = File("/Users/dk/Documents/git-for-chiptune/kotlin.study.example/Part5-Lambda/Sequence.kt")
+    val file = File("/Users/dk/Documents/git-for-chiptune/kotlin.study.example/Part5-Lambda/5.12-자연수의시퀀스를생성하고사용하기.kt")
     println(file.isInsideHiddenDirectory())
 
 }
