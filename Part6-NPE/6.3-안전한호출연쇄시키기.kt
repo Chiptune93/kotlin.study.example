@@ -1,0 +1,16 @@
+package `Part6-NPE`
+
+class Address(val streetAddress: String, val zipCode: Int, val city: String, val country: String)
+class Company(val name: String, val address: Address?)
+class Person(val name: String, val company: Company?)
+
+fun Person.countryName(): String {
+    // ?. 연산자를 연쇄해서 사용한다.
+    val country = this.company?.address?.country
+    return if (country != null) country else "Unknown"
+}
+
+fun main() {
+    val person = Person("Dmitry", null)
+    println(person.countryName())
+}
