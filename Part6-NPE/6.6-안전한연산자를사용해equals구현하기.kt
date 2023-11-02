@@ -1,9 +1,9 @@
 package `Part6-NPE`
 
 class Person2(val firstName: String, val lastName: String) {
-    override fun equals(o: Any?): Boolean {
+    override fun equals(other: Any?): Boolean {
         // 타입이 서로 일치하지 않으면 false를 반환한다.
-        val otherPerson = o as? Person2 ?: return false
+        val otherPerson = other as? Person2 ?: return false
         // 안전한 캐스트를하고 나면 otherPersion이 Person2 타입으로 태스트 된다.
         return otherPerson.firstName == firstName &&
                 otherPerson.lastName == lastName

@@ -2,6 +2,7 @@ package `Part6-NPE`
 
 import StringProcessor
 
+
 class StringPrinter : StringProcessor {
     override fun process(value: String?) {
         println(value)
